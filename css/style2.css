@@ -1,0 +1,191 @@
+body{
+	min-width: 320px;
+	height: 100vh;
+	font-size: 20px;
+}
+*{
+	box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 779px){
+	.wrapp{
+		margin: 0 auto;
+		
+		width: 70%;
+	}
+	#inpAdd{
+	width: 100%;
+	}
+
+	#btnAdd{
+	width: 100%;
+	border-radius: 20px 20px 0px 0px; 
+	}
+}
+
+@media screen and (min-width: 780px) and (max-width: 1023px){
+	.wrapp{
+		margin: 0 auto;
+		
+		width: 50%;
+	}
+	#inpAdd{
+	width: 70%;
+	}
+	
+	#btnAdd{
+	width: 30%;
+	border-radius: 20px 0px 0px 10px; 
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.wrapp{
+	margin: 0 auto;
+
+	width: 40%;
+	}
+
+	#inpAdd{
+	width: 80%;
+	}
+	
+	#btnAdd{
+	width: 20%;
+	border-radius: 20px 0px 0px 10px; 
+	}
+}
+.block-max{
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+	background: blue;
+	
+	
+}
+li:before,
+li:after{
+	content: "";
+	display: block;
+	clear: both;
+
+}
+
+ol{
+	/*background-color: #ffffff;*/
+	width: 100%;
+	padding:0px; 
+}
+li{
+	background-color: #ffffff;
+	color: green;
+	margin: 5px 0px;
+	 
+	width: 100%;
+	padding:10px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	/*display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-between;*/
+	border-radius: 5px;
+	box-shadow: 5px 5px 0 0 solid grey; 
+	transition: all 0.5s;
+
+
+
+
+
+}
+li:hover,
+li:focus{
+	background-color: #1c1c1c1c;
+	color: red;
+	transform: scale(1.02);
+	
+	box-shadow: 0 20px 30px 0 rgba(1, 1, 1, 0.2);
+	/*opacity: .7;*/
+
+}
+
+.block-item{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background: #e7e7e7;
+	border-radius: 10px;
+	box-shadow: 0px 12px 15px -1px #939393;
+}
+
+.block-task, .block-toAdd{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: 10px;
+
+}
+.block-toAdd{
+	background-color: #ffffff;
+}
+#inpAdd{
+	border: none;
+	padding: 10px 0px 10px 0px;
+}
+#btnAdd{
+	
+	padding-left:0px;
+	border: none;
+	background-color: green;
+	padding: 10px 0px 10px 0px;
+}
+.delete{
+	display: none;
+	/*opacity: .3;*/
+	background-color: red;
+	border-radius:0 10px 10px 0;
+	border: none;
+	height: 100%;
+	width: 15%;
+	margin-right: 10px;
+	float: right;
+	transition: all 0.5s;
+  	
+}
+
+.delete:hover{
+	color: white;
+	/*opacity: 1;*/
+	margin-right: 0px; 
+	margin-left: 10px;
+	transform: scale(1.05);
+}
+
+
+.lineText-btn{
+	display: none;
+	/*opacity: 0.3;*/
+	background-color: blue;
+	border:none;
+	height: 100%;
+	width: 15%;
+	float: right;
+	border-radius: 10px 0 0 10px;
+	transition: all 0.5s;
+
+
+}
+.lineText-btn:hover{
+	color: white;
+	/*opacity: 1;*/
+	margin-right: 10px; 
+	transform: scale(1.05);
+}
+
+.line-through{
+	text-decoration: line-through;
+}
